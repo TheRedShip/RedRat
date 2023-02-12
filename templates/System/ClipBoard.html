@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Red : Remote Engineering Daemon</title>
+    <link rel="stylesheet" href="../../../static/style.css">
+
+    <link rel="stylesheet" href="../../../static/system/ClipBoard.css">
+        
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="../../../static/navigation.js"></script>
+    <script type="text/javascript" src="../../../static/system/clipboard.js"></script>
+
+
+    <link rel="icon" href="../../../static/RED.ico" />
+
+</head>
+    <body>
+        
+        <div id="panel">
+            <img id="logo" src="../../../static/icons/RED.png">
+        </div>
+        <div id="topBar">
+            <h3 id="menu" class="menu">📋ClipBoard</h3>
+            <h4 id="sub-menu" class="menu"></h4>
+        </div>
+        
+        <div id="navBar">
+            <button id="butconsole" class="navButton">
+                <img width="50%" style="margin-top:5px" src="../../../static/icons/home.png">
+            </button>
+
+            <button id="butclient" class="navButton">
+                <img width="50%" style="margin-top:5px;" src="../../../static/icons/clients.png">
+            </button>
+
+            <button id="butnetwork" class="navButton">
+                <img width="50%" style="margin-top:5px;opacity:10%;" src="../../../static/icons/network.png">
+            </button>
+
+            <button id="butbuild" class="navButton">
+                <img width="50%" style="margin-top:5px;" src="../../../static/icons/build.png">
+            </button>
+        </div>
+        
+        <div class='console'>
+            <div class='console-inner'>
+                <div id="outputs">
+
+                </div>
+                
+                <div class='output-cmd'>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div id="wrapper">
+        </div>
+        
+
+    </body>
+</html>

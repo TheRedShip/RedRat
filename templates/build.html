@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Red : Remote Engineering Daemon</title>
+    <link rel="stylesheet" href="../static/style.css">
+    <link rel="stylesheet" href="../static/build/build.css">
+    <link rel="stylesheet" href="../static/utils/switch.css">
+
+
+    <script type="text/javascript" src="../static/navigation.js"></script>
+
+    <link rel="icon" href="../static/RED.ico" />
+
+</head>
+    <body>
+        
+        <div id="panel">
+            <img id="logo" src="../static/icons/RED.png">
+        </div>
+        <div id="topBar">
+            <h3 id="menu" class="menu">Build</h3>
+        </div>
+        
+        <div id="navBar">
+
+            <button id="butconsole" class="navButton">
+                <img width="50%" style="margin-top:5px" src="../static/icons/home.png">
+            </button>
+
+            <button id="butclient" class="navButton">
+                <img width="50%" style="margin-top:5px" src="../static/icons/clients.png">
+            </button>
+            
+            <button id="butnetwork" class="navButton">
+                <img width="50%" style="margin-top:5px" src="../static/icons/network.png">
+            </button>
+
+            <button id="butbuild" class="navButton">
+                <img width="50%" style="margin-top:5px;opacity:10%;" src="../static/icons/build.png">
+            </button>
+        </div>
+
+        <div id="wrapper-left">
+            <h1 class="subTitle">Parameter</h1>
+            <br><br><br>
+
+            <label for="host">Host (IP/DNS): </label>
+            <input type="text" name="host" size="20" placeholder="e.g 127.0.0.1">
+            
+            <br>
+            
+            <label for="port">Port: </label>
+            <input type="text" name="port" size="7" placeholder="e.g 5454">
+            
+            <br>
+            
+            <label for="filename">File name: </label>
+            <input type="text" name="filename" size="15">
+            
+            <br>
+
+            <label for="victimgroup">Victim group: </label>
+            <input type="text" name="victimgroup" size="15" placeholder="e.g neighbors">
+            
+            <br>
+            
+            <label class="switchLabel" for="runStartup">Run at startup: </label>
+            <label class="switch switchLabel">
+                <input class="switchInput" name="runStartup" type="checkbox">
+                <span class="slider round"></span>
+            </label>
+            
+            <br>
+        </div>
+
+        <div id="wrapper-right">
+            <h1 class="subTitle">Modules</h1>
+            <br><br><br>
+
+            <label class="switchLabel" for="mod-redcore">RED Core: </label> 
+            <label class="switch switchLabel">
+                <input class="switchInput" name="mod-redcore" type="checkbox" checked> 
+                <span class="slider round"></span>
+            </label> 
+            
+            <br>
+
+            <label class="switchLabel" for="mod-surveillance">Surveillance: </label> 
+            <label class="switch switchLabel">
+                <input class="switchInput" name="mod-surveillance" type="checkbox"> 
+                <span class="slider round"></span>
+            </label> 
+            
+            <br>
+
+            <label class="switchLabel" for="keylogger">Keylogger: </label>
+            <label class="switch switchLabel">
+                <input class="switchInput" name="mod-keylogger" type="checkbox">
+                <span class="slider round"></span>
+            </label>
+
+            <br>
+            
+            <label class="switchLabel" for="mod-keylogger-subswitch" class="sub-label">Always analyse: </label>
+            <label class="switch  switchLabel sub-switch">
+                <input class="switchInput" name="mod-keylogger-subswitch" type="checkbox">
+                <span class="slider round"></span>
+            </label>
+
+            <br>
+
+            <label class="switchLabel" for="mod-passwordStealing">Password stealing: </label>
+            <label class="switch switchLabel">
+                <input class="switchInput" name="mod-passwordStealing" type="checkbox">
+                <span class="slider round"></span>
+            </label>
+
+            <br>
+
+            <label class="switchLabel" for="mod-fun">Fun tool: </label>
+            <label class="switch switchLabel">
+                <input class="switchInput" name="mod-fun" type="checkbox">
+                <span class="slider round"></span>
+            </label>
+
+        </div>
+
+    </body>
+</html>

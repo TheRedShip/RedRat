@@ -1,0 +1,25 @@
+select {
+    appearance: none;
+    border: 0;
+    outline: 0;
+    font-size: 0.8vw;
+    width: 13vw;
+    height: 3.5vh;
+    padding: 0 4em 0 1em;
+    background: url(https://upload.wikimedia.org/wikipedia/commons/9/9d/Caret_down_font_awesome_whitevariation.svg) no-repeat right 0.8em center / 1.4em, linear-gradient(to left, rgba(255, 255, 255, 0.3) 3em, rgba(255, 255, 255, 0.2) 3em);
+    color: white;
+    border-radius: 0.25em;
+    box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+select option {
+    color: inherit;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+select:focus {
+    outline: none;
+}
+select::-ms-expand {
+    
+    display: none;
+}

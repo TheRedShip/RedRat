@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Red : Remote Engineering Daemon</title>
+    <link rel="stylesheet" href="../../../static/style.css">
+    <link rel="stylesheet" href="../../../static/utils/slider.css">
+    <link rel="stylesheet" href="../../../static/utils/switch.css">
+
+    <link rel="stylesheet" href="../../../static/surveillance/remoteDesktop.css">
+
+    <script type="text/javascript" src="../../../static/navigation.js"></script>
+    <script type="text/javascript" src="../../../static/surveillance/remoteDesktop.js"></script>
+
+    <link rel="icon" href="../../../static/RED.ico" />
+
+</head>
+    <body>
+        
+        <div id="panel">
+            <img id="logo" src="../../../static/icons/RED.png">
+        </div>
+        <div id="topBar">
+            <h3 id="menu" class="menu">🖥️Remote Desktop</h3>
+            <h4 id="sub-menu" class="menu"></h4>
+        </div>
+        
+        <div id="navBar">
+            <button id="butconsole" class="navButton">
+                <img width="50%" style="margin-top:5px" src="../../../static/icons/home.png">
+            </button>
+
+            <button id="butclient" class="navButton">
+                <img width="50%" style="margin-top:5px;" src="../../../static/icons/clients.png">
+            </button>
+
+            <button id="butnetwork" class="navButton">
+                <img width="50%" style="margin-top:5px;opacity:10%;" src="../../../static/icons/network.png">
+            </button>
+
+            <button id="butbuild" class="navButton">
+                <img width="50%" style="margin-top:5px;" src="../../../static/icons/build.png">
+            </button>
+        </div>
+        
+        <div id="top-wrapper">
+            <div id="slider-wrapper">
+                <label for="quality-slider">Quality : </label>
+
+                <div class="range-slider" style="width:15vw;">
+                    <input name="quality-slider" class="range-slider__range" type="range" value="25" min="1" max="50">
+                    <span class="range-slider__value">25</span>
+                </div>
+            </div>
+            <div>
+                <label class="switchLabel" for="forceMouse" style="font-size:1.2vw;">Force mouse move: </label>
+                <label class="switch switchLabel">
+                    <input class="switchInput" name="forceMouse" type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+                
+            </div>
+            <div>
+                <label class="switchLabel" for="forceDrag" style="font-size:1.2vw;">Force drag move: </label>
+                <label class="switch switchLabel">
+                    <input class="switchInput" name="forceDrag" type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+            
+        </div>
+
+        <div id="wrapper">
+            <img id="remotedesktop">
+        </div>
+        
+
+    </body>
+</html>

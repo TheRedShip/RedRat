@@ -1,0 +1,91 @@
+
+.switchLabel {
+    color:rgb(253, 240, 213);
+    font-family: 'RobotoL';
+    letter-spacing: 1.8px;
+    font-weight: lighter;
+    font-size: 1.2vw;
+
+    animation: scale-in-center 0.5s cubic-bezier(0.230, 1.000, 0.320, 1.000) 1.5s both;
+}
+
+.switchInput {
+    outline:none;
+    border-radius: 0.5em;
+    border:none;
+    background-color:rgba(0, 0, 0, 0.25);;
+    color:rgb(253, 240, 213);
+    font-family: 'RobotoL';
+    letter-spacing: 1.8px;
+    font-weight: bold;
+    font-size: 1.6vw;
+    height: 3.75vh;
+    padding-left:15px;
+    margin-bottom: 3.75vh;
+    opacity:0;
+    animation: scale-in-center 0.5s cubic-bezier(0.230, 1.000, 0.320, 1.000) 1.5s both;
+}
+
+.sub-label{
+    margin-left:30px;
+}
+.sub-switch {
+    margin-left:30px;
+}
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    margin-left:5px;
+    margin-bottom: 55px;
+}
+.switch .switchInput {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+  
+.slider {   
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #e13128;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.multSwitch .switch .switchInput:checked .multSwitch  {
+    background-color: red;
+}
+
+.switchInput:checked + .slider {
+    background-color: rgba(11,203,254,0.9);
+    box-shadow: 0 0 20px 0 rgba(4,233,254,0.9);
+}
+.switchInput:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+  
+.slider.round {
+    border-radius: 34px;
+}
+.slider.round:before {
+    border-radius: 50%;
+}

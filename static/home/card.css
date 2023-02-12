@@ -1,0 +1,90 @@
+.cards-list {
+    z-index: 0;
+    width: calc(100%-8.9vw);
+    padding-top:12vh;
+    margin-left:8.9vw;
+
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+  
+.card {
+    
+    margin: 30px auto;
+    width: 14vw;
+    height: 22.5vh;
+    border-radius: 40px;
+    /* box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22); */
+    cursor: pointer;
+    animation: scale-in-center 0.5s cubic-bezier(0.860, 0.000, 0.070, 1.000) 1.2s both;
+    transition: 0.2s box-shadow;
+}
+#card-orange{
+    box-shadow: 0px 0px 20px 0px rgba(222,34,72,0.9);
+}
+#card-orange:hover {
+    box-shadow: 0px 0px 35px 0px rgba(222,34,72,0.9) !important;
+}
+#card-blue{
+    box-shadow: 0px 0px 20px 0px rgba(4,233,254,0.9);
+}
+#card-blue:hover {
+    box-shadow: 0px 0px 35px 0px rgba(4,233,254,0.9) !important;
+}
+#card-purple{
+    box-shadow: 0px 0px 20px 0px rgba(147,0,254,0.9);
+}
+#card-purple:hover {
+    box-shadow: 0px 0px 35px 0px rgba(147,0,254,0.9) !important;
+}
+
+
+.card .card_image {
+    width: inherit;
+    height: inherit;
+    border-radius: 40px;
+}
+
+.card .card_image img {
+    width: inherit;
+    height: inherit;
+    border-radius: 40px;
+    object-fit: cover;
+}
+
+.card .card_title {
+    color:rgb(253, 240, 213);
+    text-align: center;
+    border-radius: 0px 0px 40px 40px;
+    font-family: 'Roboto';
+    letter-spacing: 1.8px;
+    font-weight: lighter;
+    font-size: 1.2vw;
+    margin-top: -60px;
+    height: 40px;
+}
+
+#numInfected {
+    color: #ED792B !important;
+    font-size: 1.5vw !important;
+}
+#numOnline {
+    color: #49A125 !important;
+    font-size: 1.5vw !important;
+}
+#numOffline{
+    color: #901010 !important;
+    font-size: 1.5vw !important;
+}
+
+@keyframes scale-in-center {
+    0% {
+      transform: scale(0);
+      opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}

@@ -1,0 +1,109 @@
+@font-face {
+    font-family: 'RobotoMono';
+    src: url('../fonts/RobotoMono-Light.ttf');
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Black.ttf');
+}
+
+
+body {
+    overflow-y:hidden;
+}
+
+#wrapper {
+    position:absolute;
+    padding:20px;
+
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 3em;
+
+    margin-top: calc(10.1vh + 3vh);
+    margin-left: calc(8.9vw + 3.6vw - 1.5vw);
+    
+    height: calc(95% - (10.1vh + 3vh));
+    width: calc(98% - (8.9vw + 3.6vw));
+    animation: slide-in-blurred-bottom 0.6s cubic-bezier(0.230, 1.000, 0.320, 1.000) 0.5s both !important;
+    
+}
+
+
+.console {
+    position: fixed;
+    font-family: 'RobotoMono';
+    font-size:1.5vh;
+    color: #fff;
+    width: 40vw;
+    max-height: 50%;
+    overflow-y: auto;
+    margin: 20vh calc(50% - 40vw/2 + 8.9vw/2);
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 0.8em;
+    box-shadow: 0 0.75em 3em rgba(50, 50, 50, 0.5);
+    z-index: 100;
+    line-height: 1.5;
+
+    animation: slide-in-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.7s both;
+}
+.output-text,.output-cmd {
+  width: 100%;
+  display: block;
+}
+.console-inner {
+    padding: 0.3em 1.1em;
+}
+
+.output-text,.output-cmd {
+    display: block;
+    white-space: pre;
+}
+
+.console-inner .output-text#ready {
+    color: #3df5b8;
+    font-style: italic;
+    opacity: 0.75;
+}
+
+
+#outputs div {
+    opacity: 0.85;
+}
+
+#outputs div div {
+    color: #46f01d;
+    opacity: 0.8;
+    text-decoration: none;
+}
+
+#outputs a {
+    color: #46f01d;
+    opacity: 0.8;
+    text-decoration: underline;
+}
+
+#con-info {
+    color: #57b4ff;
+}
+#con-success {
+    color: #46f01d;
+}
+#con-fail {
+    color: #e22c23;
+}
+
+
+#con-menuFlag {
+    color: #ff4545;
+}
+#con-remote {
+    color: #E70E02;
+}
+#con-engineering {
+    color: #D84A05;
+}
+#con-daemon {
+    color: #E89005;
+}

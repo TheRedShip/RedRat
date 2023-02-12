@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Red : Remote Engineering Daemon</title>
+    <link rel="stylesheet" href="../static/style.css">
+    <link rel="stylesheet" href="../static/client/table.css">
+    <link rel="stylesheet" href="../static/client/dropDown.css">
+
+    <script type="text/javascript" src="../static/navigation.js"></script>
+    <script type="text/javascript" src="../static/client/clientSpawn.js"></script>
+    <script type="text/javascript" src="../static/client/clientInteraction.js"></script>
+
+    <link rel="icon" href="../static/RED.ico" />
+
+</head>
+    <body>
+        
+        <div id="panel">
+            <img id="logo" src="../static/icons/RED.png">
+        </div>
+        <div id="topBar">
+            <h3 id="menu" class="menu">Clients</h3>
+        </div>
+        
+        <div id="navBar">
+            <button id="butconsole" class="navButton">
+                <img width="50%" style="margin-top:5px;" src="../static/icons/home.png">
+            </button>
+            
+            <button id="butclient" class="navButton">
+                <img width="50%" style="margin-top:5px;opacity:10%;" src="../static/icons/clients.png">
+            </button>
+
+            <button id="butnetwork" class="navButton">
+                <img width="50%" style="margin-top:5px;" src="../static/icons/network.png">
+            </button>
+
+            <button id="butbuild" class="navButton">
+                <img width="50%" style="margin-top:5px;" src="../static/icons/build.png">
+            </button>
+        </div>
+
+        <div id="wrapper">
+            <table id="clientTable" style="width:100%">
+                <tr>
+                    <th>Name</th>
+                    <th>IP</th>
+                    <th>OS</th>
+                    <th>GeoLoc</th>
+                    <th>Ping</th>
+                    <th>Idle Time</th>
+                    <th>Up Time</th>
+                    <th>Active Window</th>
+                </tr> 
+            </table>
+        </div>
+        
+        
+
+        <nav>
+            <menu>
+                <menuitem class="hover" id="contextMenu">
+                    <menu>
+                        <menuitem>
+                            <a>💾System</a>
+                            <menu>
+                                <menuitem><a>📊Information</a></menuitem>
+                                <menuitem><a>📋ClipBoard</a></menuitem>
+                                <menuitem><a>🌐Open URL</a></menuitem>
+                                <menuitem><a>🔄Reboot</a></menuitem>
+                                <menuitem><a>🛑StandBy</a></menuitem>
+                                <menuitem><a>🔌Shutdown</a></menuitem>
+                            </menu>  
+                        </menuitem>
+                        <menuitem>
+                            <a>👁️Surveillance</a>
+                            <menu>
+                                <menuitem><a>🌆Screenshot</a></menuitem>
+                                <menuitem><a>🖥️Remote Desktop</a></menuitem>
+                                <menuitem><a>🎥Remote Webcam</a></menuitem>
+                                <menuitem><a>🎙️Remote Microphone</a></menuitem>
+                                <menuitem><a>⌨️Key-Logger</a></menuitem>
+                                <menuitem><a>🔒Lock</a></menuitem>
+                                <menuitem><a>🔓Unlock</a></menuitem>
+                            </menu>  
+                        </menuitem>
+                        <menuitem>
+                            <a>✨Fun</a>
+                            <menu>
+                                <menuitem><a>🔊Play Sound</a></menuitem>
+                                <menuitem><a>⬛Black Screen</a></menuitem>
+                                <menuitem><a>💬Remote Chat</a></menuitem>
+                                <menuitem><a>🗨️Message Box</a></menuitem>
+                                <menuitem><a>🗣️Robot Voice</a></menuitem>
+                            </menu>  
+                        </menuitem>
+                        <menuitem>
+                            <a>🔧Tool</a>
+                            <menu>
+                                <menuitem><a>🛠️Processus</a></menuitem>
+                                <menuitem><a>🧹Clear Process</a></menuitem>
+                                <menuitem><a>💻Shell</a></menuitem>
+                                <menuitem><a>🔑Password Steal</a></menuitem>
+                                
+                            </menu>  
+                        </menuitem>
+                        <menuitem>
+                            <a>📂File</a>
+                            <menu>
+                                <menuitem><a>🔎Explore</a></menuitem>
+                                <menuitem><a>📥Download</a></menuitem>
+                                <menuitem><a>⚡Execute</a></menuitem>
+                            </menu>  
+                        </menuitem>
+                        
+<!-- 
+                        <menuitem>
+                            <a>more</a>
+                            <menu>
+                                <menuitem>
+                                    <a>deeper</a>
+                                    <menu>
+                                        <menuitem><a>deep 1</a></menuitem>
+                                        <menuitem><a>deep 2</a></menuitem>
+                                        <menuitem><a>deep 3</a></menuitem>
+                                    </menu>
+                                </menuitem>
+                                <menuitem><a>test</a></menuitem>
+                            </menu>
+                        </menuitem> -->
+
+
+                    </menu>
+                </menuitem>
+            </menu>
+        </nav>
+
+    </body>
+</html>

